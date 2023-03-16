@@ -415,6 +415,7 @@ template, [hidden] {
     display: -ms-flexbox;
     display: flex;
     left: 40px;
+    top: 40px; /* set a fixed height */
 }
 
 @media (max-width: 575px) {
@@ -436,6 +437,7 @@ template, [hidden] {
     -ms-flex-align: end;
     align-items: flex-end;
     width: 164px;
+    height: 100px; /* set a fixed height */
     margin-left: 7px;
 }
 
@@ -463,26 +465,28 @@ template, [hidden] {
 }
 
 .header-contacts__phone-number-accord {
-    position: absolute;
+    /* position: absolute;
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    display: -ms-flexbox; */
+    display: none;
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    -ms-flex-direction: column; */
     flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    top: 0;
+    /* -webkit-box-align: end;
+    -ms-flex-align: end; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* top: 0;
     -webkit-transition: 0.5s;
-    transition: 0.5s;
+    transition: 0.5s; */
 }
 
 .header-contacts__phone-number-accord a {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    opacity: 0;
+    /* -webkit-transition: 0.5s;
+    transition: 0.5s; */
+    opacity: 1;
+    margin-left: -50px;
 }
 
 .header-contacts__arrow {
@@ -494,18 +498,26 @@ template, [hidden] {
 .header-contacts__arrow img {
     margin-top: 12px;
     margin-left: 5px;
+    transition: transform 0.5s;
+}
+
+.header-contacts__arrow.clicked img {
+  transform: rotate(180deg);
 }
 
 .header-contacts__messagers {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    /* -ms-flex-pack: distribute; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
     align-items: center;
-    width: 134px;
+    margin-top: 10px;
+    /* width: 134px; */
+    /* margin-left: -50px; */
 }
 
 .header-contacts__messagers-descr {

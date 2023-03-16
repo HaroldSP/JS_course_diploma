@@ -4,8 +4,8 @@
 
 'strict';
 
-import oneModule from './one.js';
+import showSecondPhone from './1_showSecondPhone';
 import twoModule from './two.js';
 
-oneModule();
+showSecondPhone();
 twoModule();

@@ -5,7 +5,7 @@
 'strict';
 
 import showSecondPhone from './1_showSecondPhone';
-import twoModule from './two.js';
+import burgerMenu from './2-3_burgerMenu.js';
 
 showSecondPhone();
-twoModule();
+burgerMenu();

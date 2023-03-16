@@ -4801,6 +4801,7 @@ div.wave-block:nth-child(17):after {
 
 .popup-dialog-menu {
     position: absolute;
+    /* position: fixed; */
     visibility: visible;
     top: 0;
     right: 0;
@@ -8780,10 +8781,23 @@ strong {
 }
 
 .showMenu {
+    /* left: 10; */
     -webkit-animation-name: showMenu;
     animation-name: showMenu;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    display: block;
+    animation-fill-mode: forwards;
+}
+
+.hideMenu {
+    /* left: 10; */
+    -webkit-animation-name: hideMenu;
+    animation-name: hideMenu;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    /* display: block; */
+    animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
@@ -8903,9 +8917,10 @@ strong {
 }
 
 .show {
+    /* left: 0; */
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: block; */
 }
 
 .hide {
